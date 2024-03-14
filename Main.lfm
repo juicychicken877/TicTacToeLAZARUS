@@ -1,0 +1,198 @@
+object Form1: TForm1
+  Left = 1280
+  Height = 476
+  Top = 191
+  Width = 339
+  Caption = 'TicTacToe'
+  ClientHeight = 0
+  ClientWidth = 0
+  Font.CharSet = EASTEUROPE_CHARSET
+  Font.Height = -27
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Button1: TButton
+    Left = 16
+    Height = 100
+    Top = 48
+    Width = 100
+    TabOrder = 0
+    OnClick = ButtonClick
+  end
+  object Button3: TButton
+    Left = 224
+    Height = 100
+    Top = 48
+    Width = 100
+    TabOrder = 1
+    OnClick = ButtonClick
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 100
+    Top = 152
+    Width = 100
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ButtonClick
+  end
+  object Button2: TButton
+    Left = 120
+    Height = 100
+    Top = 48
+    Width = 100
+    TabOrder = 3
+    OnClick = ButtonClick
+  end
+  object Button5: TButton
+    Left = 120
+    Height = 100
+    Top = 152
+    Width = 100
+    TabOrder = 4
+    OnClick = ButtonClick
+  end
+  object Button6: TButton
+    Left = 224
+    Height = 100
+    Top = 152
+    Width = 100
+    TabOrder = 5
+    OnClick = ButtonClick
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 100
+    Top = 256
+    Width = 100
+    TabOrder = 6
+    OnClick = ButtonClick
+  end
+  object Button8: TButton
+    Left = 120
+    Height = 100
+    Top = 256
+    Width = 100
+    TabOrder = 7
+    OnClick = ButtonClick
+  end
+  object Button9: TButton
+    Left = 224
+    Height = 100
+    Top = 256
+    Width = 100
+    TabOrder = 8
+    OnClick = ButtonClick
+  end
+  object TurnLabel: TLabel
+    Left = 16
+    Height = 30
+    Top = 8
+    Width = 65
+    Caption = 'Turn: X'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object ResultLabel: TLabel
+    Left = 16
+    Height = 30
+    Top = 368
+    Width = 105
+    Caption = 'ResultLabel'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    Visible = False
+  end
+  object PlayAgainButton: TButton
+    Left = 16
+    Height = 48
+    Top = 408
+    Width = 135
+    Caption = 'Play Again'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    Visible = False
+    OnClick = ResetGame
+  end
+  object XLabel: TLabel
+    Left = 302
+    Height = 37
+    Top = 400
+    Width = 16
+    Caption = 'X'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object OLabel: TLabel
+    Left = 302
+    Height = 37
+    Top = 427
+    Width = 20
+    Caption = 'O'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object XLabelCount: TLabel
+    Left = 264
+    Height = 37
+    Top = 400
+    Width = 15
+    Caption = '0'
+  end
+  object OLabelCount: TLabel
+    Left = 264
+    Height = 37
+    Top = 427
+    Width = 15
+    BidiMode = bdRightToLeftNoAlign
+    Caption = '0'
+    ParentBidiMode = False
+  end
+  object Label1: TLabel
+    Left = 276
+    Height = 30
+    Top = 368
+    Width = 46
+    Caption = 'Wins'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object ResetButton: TButton
+    Left = 224
+    Height = 30
+    Top = 8
+    Width = 98
+    Caption = 'Reset'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+    OnClick = ResetGame
+  end
+end
